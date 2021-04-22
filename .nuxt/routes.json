@@ -1,0 +1,37 @@
+[
+  {
+    "name": "farm___en",
+    "path": "/farm",
+    "component": "/home/panos/Documents/New_UI/pages/farm.vue",
+    "chunkName": "pages/farm",
+    "_name": "_372f9d19"
+  },
+  {
+    "name": "infos___en",
+    "path": "/infos",
+    "component": "/home/panos/Documents/New_UI/pages/infos.vue",
+    "chunkName": "pages/infos",
+    "_name": "_3e4b25b2"
+  },
+  {
+    "name": "pools___en",
+    "path": "/pools",
+    "component": "/home/panos/Documents/New_UI/pages/pools.vue",
+    "chunkName": "pages/pools",
+    "_name": "_e9f631f8"
+  },
+  {
+    "name": "trade___en",
+    "path": "/trade",
+    "component": "/home/panos/Documents/New_UI/pages/trade.vue",
+    "chunkName": "pages/trade",
+    "_name": "_20b6de11"
+  },
+  {
+    "name": "index___en",
+    "path": "/",
+    "component": "/home/panos/Documents/New_UI/pages/index.vue",
+    "chunkName": "pages/index",
+    "_name": "_7896a302"
+  }
+]
