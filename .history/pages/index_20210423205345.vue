@@ -4,10 +4,11 @@
 
 <style scoped>
 .background {
-  width: 100vw;
-  height: 100vh;
+  position: absolute;
+  width: 2014.35px;
+  height: 1112px;
   left: -94.35px;
   top: -2px;
-  background: url('~assets/img/bubble_with_bg.svg') no-repeat right;
+  background: url('~assets/img/background.png');
 }
 </style>

@@ -42,7 +42,7 @@
               {{ $t('connect_wallet') }}
             </v-btn>
           </v-navigation-drawer>
-          <v-col cols="12 pa-0">
+          <v-col cols="12 pt-0">
             <nuxt />
           </v-col>
         </v-row>

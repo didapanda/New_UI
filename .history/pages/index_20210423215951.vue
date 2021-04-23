@@ -8,6 +8,6 @@
   height: 100vh;
   left: -94.35px;
   top: -2px;
-  background: url('~assets/img/bubble_with_bg.svg') no-repeat right;
+  background: url('~assets/img/bubble_with_bg.svg') no-repeat;
 }
 </style>

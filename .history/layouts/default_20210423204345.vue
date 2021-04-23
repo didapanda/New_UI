@@ -3,46 +3,46 @@
     <v-main>
       <v-container fluid>
         <v-row class="sidebar" justify="center">
-          <v-navigation-drawer width="350" permanent app>
-            <nuxt-link nuxt :to="localePath(`/`)">
-              <div class="ml-12">
-                <img
-                  class="img"
-                  max-height="150"
-                  max-width="250"
-                  alt="Pandaswap"
-                  src="~/assets/img/logo.svg"
-                />
+            <v-navigation-drawer width="350" permanent app>
+              <nuxt-link nuxt :to="localePath(`/`)">
+                <div class="ml-12">
+                  <img
+                    class="img"
+                    max-height="150"
+                    max-width="250"
+                    alt="Pandaswap"
+                    src="~/assets/img/logo.svg"
+                  />
+                </div>
+              </nuxt-link>
+              <v-list class="pt-16 mt-16 ml-12 mr-8" nav rounded>
+                <v-list-item
+                  v-for="(item, i) in items"
+                  :key="i + 1"
+                  class="item"
+                  :to="localePath(item.to)"
+                  router
+                  exact
+                >
+                  <v-list-item-icon class="ml-12">
+                    <v-icon>{{ item.icon }}</v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content>
+                    <v-list-item-title v-text="item.title" />
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list>
+              <hr class="hr mx-4" />
+              <div class="pt-4 text-center">
+                <span class="text">{{ $t('bamboo_price') }}</span>
+                <br />
+                <span class="bamboo-value mr-16 pr-2">{{ bamboo_value }}</span>
               </div>
-            </nuxt-link>
-            <v-list class="pt-16 mt-16 ml-12 mr-8" nav rounded>
-              <v-list-item
-                v-for="(item, i) in items"
-                :key="i + 1"
-                class="item"
-                :to="localePath(item.to)"
-                router
-                exact
-              >
-                <v-list-item-icon class="ml-12">
-                  <v-icon>{{ item.icon }}</v-icon>
-                </v-list-item-icon>
-                <v-list-item-content>
-                  <v-list-item-title v-text="item.title" />
-                </v-list-item-content>
-              </v-list-item>
-            </v-list>
-            <hr class="hr mx-4" />
-            <div class="pt-4 text-center">
-              <span class="text">{{ $t('bamboo_price') }}</span>
-              <br />
-              <span class="bamboo-value mr-16 pr-2">{{ bamboo_value }}</span>
-            </div>
-            <v-btn class="ml-16 button" outlined rounded color="black">
-              {{ $t('connect_wallet') }}
-            </v-btn>
-          </v-navigation-drawer>
-          <v-col cols="12 pa-0">
+              <v-btn class="ml-16 button" outlined rounded color="black">
+                {{ $t('connect_wallet') }}
+              </v-btn>
+            </v-navigation-drawer>
+          <v-col cols="12">
             <nuxt />
           </v-col>
         </v-row>
