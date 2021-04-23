@@ -4,9 +4,7 @@
       <p class="big-text">{{ $t('panda_swap') }}</p>
       <p class="small-text pl-3">{{ $t('home_text') }}</p>
     </div>
-    <div class="footer">
-      {{ $t('powered_by') }} <img class="pl-4" src="~assets/img/avaxlogo.png" />
-    </div>
+    <div class="footer">{{ $t('powered_by') }}</div>
   </div>
 </template>
 
@@ -50,6 +48,7 @@
   width: 500px; /* Can be in percentage also. */
   height: auto;
   margin: auto;
+  padding: 10px;
   position: relative;
   top: 50%;
   right: 20%;
