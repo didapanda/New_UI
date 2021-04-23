@@ -2,7 +2,7 @@
   <div class="background">
     <div class="parent">
       <p class="big-text">{{ $t('panda_swap') }}</p>
-      <p class="small-text pl-3">{{ $t('home_text') }}</p>
+      <p class="small-text">{{ $t('home_text') }}</p>
     </div>
   </div>
 </template>
@@ -17,7 +17,7 @@
 }
 .parent {
   display: inline-block;
-  width: 500px; /* Can be in percentage also. */
+  width: 640px; /* Can be in percentage also. */
   height: auto;
   margin: auto;
   padding: 10px;
@@ -40,7 +40,7 @@
   font-weight: 400;
   line-height: 27px;
   letter-spacing: 0em;
-  text-align: left;
+  text-align: center;
   color: #168e80;
 }
 </style>

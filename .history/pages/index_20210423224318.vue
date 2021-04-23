@@ -2,7 +2,7 @@
   <div class="background">
     <div class="parent">
       <p class="big-text">{{ $t('panda_swap') }}</p>
-      <p class="small-text pl-3">{{ $t('home_text') }}</p>
+      <p class="small-text">{{ $t('home_text') }}</p>
     </div>
   </div>
 </template>

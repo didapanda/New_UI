@@ -1,8 +1,8 @@
 <template>
   <v-app>
     <v-main>
-      <v-container fluid>
-        <v-row class="sidebar background" justify="center">
+      <v-container class="background" fluid>
+        <v-row class="sidebar" justify="center">
           <v-navigation-drawer width="350" permanent app>
             <nuxt-link nuxt :to="localePath(`/`)">
               <div class="ml-12">

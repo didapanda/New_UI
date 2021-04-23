@@ -9,6 +9,6 @@ export default async (context, locale) => {
     connect_wallet: 'Connect wallet',
     panda_swap: 'PANDA SWAP',
     home_text:
-      'Stake your Pandaswap LP tokens to start growing your very own $BAMBOO !',
+      'Stake your Pandaswap LP tokens to start growing\nyour very own $BAMBOO !',
   })
 }

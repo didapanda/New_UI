@@ -1,9 +1,6 @@
 <template>
   <div class="background">
-    <div class="parent">
-      <p class="big-text">{{ $t('panda_swap') }}</p>
-      <p class="small-text pl-3">{{ $t('home_text') }}</p>
-    </div>
+    <div class="parent"><p class="big-text"> PANDA SWAP</p><p class="small-text"></p></div>
   </div>
 </template>
 
@@ -17,15 +14,15 @@
 }
 .parent {
   display: inline-block;
-  width: 500px; /* Can be in percentage also. */
+  width: 640px; /* Can be in percentage also. */
   height: auto;
   margin: auto;
   padding: 10px;
   position: relative;
-  top: 30%;
-  left: 5%;
 }
 .big-text {
+  top: 30%;
+  left: 5%;
   font-size: 72px;
   font-style: normal;
   font-weight: 700;
@@ -35,12 +32,12 @@
 }
 .small-text {
   font-family: Poppins;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 27px;
-  letter-spacing: 0em;
-  text-align: left;
-  color: #168e80;
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 27px;
+letter-spacing: 0em;
+text-align: left;
+
 }
 </style>
