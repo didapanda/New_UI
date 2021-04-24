@@ -14,14 +14,5 @@ export default async (context, locale) => {
     pools_title: 'POOLS',
     pools_txt:
       'Select your favorite pair. Stake Liquidity Pool (LP) Tokens to earn.',
-    infos_title: 'INFOS',
-    trade_title: 'TRADE',
-    farm_title: 'FARM',
-    infos_txt:
-      'Select your favorite pair. Stake Liquidity Pool (LP) Tokens to earn.',
-    trade_txt:
-      'Select your favorite pair. Stake Liquidity Pool (LP) Tokens to earn.',
-    farm_txt:
-      'Select your favorite pair. Stake Liquidity Pool (LP) Tokens to earn.',
   })
 }

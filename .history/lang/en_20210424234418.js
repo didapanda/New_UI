@@ -20,7 +20,7 @@ export default async (context, locale) => {
     infos_txt:
       'Select your favorite pair. Stake Liquidity Pool (LP) Tokens to earn.',
     trade_txt:
-      'Select your favorite pair. Stake Liquidity Pool (LP) Tokens to earn.',
+    'Select your favorite pair. Stake Liquidity Pool (LP) Tokens to earn.',
     farm_txt:
       'Select your favorite pair. Stake Liquidity Pool (LP) Tokens to earn.',
   })
