@@ -1,9 +1,6 @@
 <template>
-  <div class="parent">
+  <div class="background">
     <h1 class="title">Pools</h1>
-    <div class="background">
-      <img class="img" src="~assets/img/Group.png" />
-    </div>
   </div>
 </template>
 
@@ -17,14 +14,8 @@
 .background {
   width: 100vw;
   height: 100vh;
-}
-.img {
-  position: fixed;
-  right: 0px;
   bottom: 0px;
-}
-.parent {
-  width: 100vw;
-  height: 100vh;
+  right: 0px;
+  background: url('~assets/img/Group.png') no-repeat right;
 }
 </style>

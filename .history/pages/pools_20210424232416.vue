@@ -1,9 +1,7 @@
 <template>
   <div class="parent">
     <h1 class="title">Pools</h1>
-    <div class="background">
-      <img class="img" src="~assets/img/Group.png" />
-    </div>
+    <div class="background"><img src="~assets/img/Group.png" /></div>
   </div>
 </template>
 
@@ -17,11 +15,9 @@
 .background {
   width: 100vw;
   height: 100vh;
-}
-.img {
   position: fixed;
-  right: 0px;
-  bottom: 0px;
+  right: 10px;
+  bottom: 10px;
 }
 .parent {
   width: 100vw;

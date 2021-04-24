@@ -20,8 +20,8 @@
 }
 .img {
   position: fixed;
-  right: 0px;
-  bottom: 0px;
+  right: 10px;
+  bottom: 10px;
 }
 .parent {
   width: 100vw;
