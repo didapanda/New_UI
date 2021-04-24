@@ -134,7 +134,7 @@ export default {
   font-size: 18px;
 }
 .button {
-  margin-left: 84px;
+  margin-left: 94px;
   position: absolute;
   bottom: 46px;
 }
