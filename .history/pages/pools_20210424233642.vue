@@ -1,0 +1,9 @@
+<template>
+  <div class="page-parent">
+    <h1 class="page-title mt-8">{{ $t('pools_title') }}</h1>
+    <p class="page-subtitle mt-4">{{ $t('pools_txt') }}</p>
+    <div class="page-background">
+      <img class="page-img" src="~assets/img/Group.png" />
+    </div>
+  </div>
+</template>
