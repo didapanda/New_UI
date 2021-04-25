@@ -46,45 +46,14 @@ export default {
           align: 'start',
           sortable: false,
           value: 'name',
-          class:
-            'subtitle-2 font-weight-light light-green--text text--darken-4',
+          class: 'subtitle-2 font-weight-light light-green--text text--darken-4',
         },
-        {
-          text: 'Calories',
-          value: 'calories',
-          class:
-            'subtitle-2 font-weight-light light-green--text text--darken-4',
-        },
-        {
-          text: 'Fat (g)',
-          value: 'fat',
-          class:
-            'subtitle-2 font-weight-light light-green--text text--darken-4',
-        },
-        {
-          text: 'Carbs (g)',
-          value: 'carbs',
-          class:
-            'subtitle-2 font-weight-light light-green--text text--darken-4',
-        },
-        {
-          text: 'Protein (g)',
-          value: 'protein',
-          class:
-            'subtitle-2 font-weight-light light-green--text text--darken-4',
-        },
-        {
-          text: 'Iron (%)',
-          value: 'iron',
-          class:
-            'subtitle-2 font-weight-light light-green--text text--darken-4',
-        },
-        {
-          text: '',
-          value: 'data-table-expand',
-          class:
-            'subtitle-2 font-weight-light light-green--text text--darken-4',
-        },
+        { text: 'Calories', value: 'calories' },
+        { text: 'Fat (g)', value: 'fat' },
+        { text: 'Carbs (g)', value: 'carbs' },
+        { text: 'Protein (g)', value: 'protein' },
+        { text: 'Iron (%)', value: 'iron' },
+        { text: '', value: 'data-table-expand' },
       ],
       desserts: [
         {
@@ -176,10 +145,5 @@ export default {
 <style>
 tbody tr:nth-of-type(odd) {
   background-color: #fcfaf5;
-}
-tbody tr {
-  color: #335d2d;
-  font-style: normal;
-  font-weight: 700;
 }
 </style>

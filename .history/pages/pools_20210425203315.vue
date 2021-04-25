@@ -180,6 +180,5 @@ tbody tr:nth-of-type(odd) {
 tbody tr {
   color: #335d2d;
   font-style: normal;
-  font-weight: 700;
 }
 </style>

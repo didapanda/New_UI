@@ -28,6 +28,16 @@
         <template #expanded-item="{ headers, item }">
           <td :colspan="headers.length">More info about {{ item.name }}</td>
         </template>
+        <template slot="items" slot-scope="props">
+          <tr @click="showAlert(props.item)">
+          <td>{{ props.item.name }}</td>
+          <td class="text-xs-right">{{ props.item.calories }}</td>
+          <td class="text-xs-right">{{ props.item.fat }}</td>
+          <td class="text-xs-right">{{ props.item.carbs }}</td>
+          <td class="text-xs-right">{{ props.item.protein }}</td>
+          <td class="text-xs-right">{{ props.item.iron }}</td>
+            </tr>
+        </template>
       </v-data-table>
     </div>
   </div>
@@ -176,10 +186,5 @@ export default {
 <style>
 tbody tr:nth-of-type(odd) {
   background-color: #fcfaf5;
-}
-tbody tr {
-  color: #335d2d;
-  font-style: normal;
-  font-weight: 700;
 }
 </style>

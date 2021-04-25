@@ -177,9 +177,4 @@ export default {
 tbody tr:nth-of-type(odd) {
   background-color: #fcfaf5;
 }
-tbody tr {
-  color: #335d2d;
-  font-style: normal;
-  font-weight: 700;
-}
 </style>
