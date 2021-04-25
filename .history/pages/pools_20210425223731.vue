@@ -21,6 +21,8 @@
                 v-model="search"
                 append-icon="mdi-magnify"
                 :label="$t('search')"
+                outlined
+                color="red"
               ></v-text-field>
             </v-col>
           </v-row>
@@ -45,7 +47,7 @@
               <v-col cols="12" md="5">
                 <v-card class="mx-auto bg-cl" max-width="344" outlined>
                   <v-row>
-                    <v-col cols="12" md="6">
+                    <v-col cols="6">
                       <v-card-text>
                         <p>
                           <span class="mr-2 card-text-red">{{
@@ -61,7 +63,7 @@
                         </p>
                       </v-card-text>
                     </v-col>
-                    <v-col class="align-self-center" cols="12" md="6">
+                    <v-col class="align-self-center" cols="6">
                       <v-card-actions>
                         <v-btn
                           class="full-width harvestbtn"
