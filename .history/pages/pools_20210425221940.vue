@@ -61,10 +61,10 @@
                         </p>
                       </v-card-text>
                     </v-col>
-                    <v-col class="align-self-center" cols="6">
-                      <v-card-actions>
+                    <v-col cols="6">
+                      <v-card-actions class="d-flex">
                         <v-btn
-                          class="full-width harvestbtn"
+                          class="full-width d-flex justify-center"
                           outlined
                           rounded
                           text
@@ -77,7 +77,7 @@
                 </v-card>
               </v-col>
               <v-col cols="12" md="5">
-                <v-card class="mx-auto" max-width="344">
+                <v-card class="mx-auto" max-width="344" outlined>
                   <v-card-text class="card-text-red mb-4">
                     {{ $t('stake') }}
                   </v-card-text>
@@ -274,12 +274,6 @@ tbody tr {
 .price-sub {
   color: #97ab90;
   font-size: 14px;
-  font-weight: 600;
-}
-.harvestbtn {
-  background-color: #d4dbcd;
-  color: #97ab90;
-  font-size: 18px;
   font-weight: 600;
 }
 </style>

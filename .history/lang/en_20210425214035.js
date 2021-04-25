@@ -24,8 +24,5 @@ export default async (context, locale) => {
     pair_info: 'See pair info',
     get: 'Get',
     stake: 'Stake',
-    bamboo: 'BAMBOO',
-    earned: 'EARNED',
-    harvest: 'harvest',
   })
 }

@@ -61,8 +61,8 @@
                         </p>
                       </v-card-text>
                     </v-col>
-                    <v-col class="align-self-center" cols="6">
-                      <v-card-actions>
+                    <v-col cols="6">
+                      <v-card-actions class="align-self-center">
                         <v-btn
                           class="full-width harvestbtn"
                           outlined

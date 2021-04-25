@@ -26,6 +26,5 @@ export default async (context, locale) => {
     stake: 'Stake',
     bamboo: 'BAMBOO',
     earned: 'EARNED',
-    harvest: 'harvest',
   })
 }

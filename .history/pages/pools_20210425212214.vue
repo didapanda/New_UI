@@ -26,65 +26,32 @@
           </v-row>
         </template>
         <template #expanded-item="{ headers /*item */ }">
-          <td class="bg-wt" :colspan="headers.length">
+          <td :colspan="headers.length">
             <v-row class="my-2 d-flex flex-row">
-              <v-col class="d-flex flex-column" cols="12" md="2">
-                <v-btn text class="button-color justify-start">
-                  <v-icon class="mr-2">mdi-swap-horizontal-bold</v-icon>
-                  <span> {{ $t('get') }} </span>
+              <v-col class="d-flex flex-column justify-start" cols="12" md="2">
+                <v-btn text color="error">
+                  <v-icon>mdi-swap-horizontal-bold</v-icon>
                 </v-btn>
-                <v-btn text class="button-color justify-start mt-2">
-                  <v-icon class="mr-2">mdi-information</v-icon>
-                  <span> {{ $t('view_contract') }} </span>
+                <v-btn text color="error">
+                  <v-icon>mdi-information</v-icon>
                 </v-btn>
-                <v-btn text class="button-color justify-start mt-2">
-                  <v-icon class="mr-2">mdi-information</v-icon>
-                  <span> {{ $t('pair_info') }} </span>
+                <v-btn text color="error">
+                  <v-icon>mdi-information</v-icon>
                 </v-btn>
               </v-col>
               <v-col cols="12" md="5">
-                <v-card class="mx-auto bg-cl" max-width="344" outlined>
-                  <v-row>
-                    <v-col cols="6">
-                      <v-card-text>
-                        <p>
-                          <span class="mr-2 card-text-red">{{
-                            $t('bamboo')
-                          }}</span
-                          ><span class="green-text">{{ $t('earned') }}</span>
-                        </p>
-                        <p class="mb-0">
-                          <span class="mr-2 price">1500</span>
-                        </p>
-                        <p class="mb-0">
-                          <span class="green-text price-sub">~10 USD</span>
-                        </p>
-                      </v-card-text>
-                    </v-col>
-                    <v-col class="align-self-center" cols="6">
-                      <v-card-actions>
-                        <v-btn
-                          class="full-width harvestbtn"
-                          outlined
-                          rounded
-                          text
-                        >
-                          {{ $t('harvest') }}
-                        </v-btn>
-                      </v-card-actions>
-                    </v-col>
-                  </v-row>
+                <v-card class="mx-auto" max-width="344" outlined>
+                  <v-card-text> Stake </v-card-text>
+                  <v-card-actions>
+                    <v-btn outlined rounded text> Stake </v-btn>
+                  </v-card-actions>
                 </v-card>
               </v-col>
               <v-col cols="12" md="5">
-                <v-card class="mx-auto" max-width="344">
-                  <v-card-text class="card-text-red mb-4">
-                    {{ $t('stake') }}
-                  </v-card-text>
+                <v-card class="mx-auto" max-width="344" outlined>
+                  <v-card-text> Stake </v-card-text>
                   <v-card-actions>
-                    <v-btn class="full-width" outlined rounded text>
-                      {{ $t('stake') }}
-                    </v-btn>
+                    <v-btn outlined rounded text> Stake </v-btn>
                   </v-card-actions>
                 </v-card>
               </v-col>
@@ -244,42 +211,5 @@ tbody tr {
   color: #335d2d;
   font-style: normal;
   font-weight: 700;
-}
-</style>
-<style scoped>
-.button-color {
-  color: #fe7171;
-}
-.green-text {
-  color: #97ab90;
-  font-size: 14px;
-  font-weight: 600;
-}
-.card-text-red {
-  color: #fe7171 !important;
-  font-size: 14px;
-  font-weight: 600;
-}
-.bg-cl {
-  background-color: #fcfaf5;
-}
-.bg-wt {
-  background-color: #ffffff;
-}
-.price {
-  color: #335d2d;
-  font-size: 36px;
-  font-weight: 600;
-}
-.price-sub {
-  color: #97ab90;
-  font-size: 14px;
-  font-weight: 600;
-}
-.harvestbtn {
-  background-color: #d4dbcd;
-  color: #97ab90;
-  font-size: 18px;
-  font-weight: 600;
 }
 </style>

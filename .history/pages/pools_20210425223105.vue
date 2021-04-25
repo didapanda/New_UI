@@ -61,14 +61,9 @@
                         </p>
                       </v-card-text>
                     </v-col>
-                    <v-col class="align-self-center" cols="6">
-                      <v-card-actions>
-                        <v-btn
-                          class="full-width harvestbtn"
-                          outlined
-                          rounded
-                          text
-                        >
+                    <v-col cols="6">
+                      <v-card-actions class="align-self-center">
+                        <v-btn class="full-width" outlined rounded text>
                           {{ $t('harvest') }}
                         </v-btn>
                       </v-card-actions>
