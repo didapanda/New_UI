@@ -124,7 +124,7 @@ export default {
           to: '/trade',
         },
         {
-          icon: 'mdi-tractor',
+          icon: 'mdi-swap-horizontal-bold',
           title: this.$t('farm'),
           to: '/farm',
         },
