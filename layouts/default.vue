@@ -154,9 +154,6 @@ export default {
         ? this.$eth.disconnect()
         : this.$eth.connect()
     },
-    goto() {
-      this.$router.push('/content/companies')
-    },
     name() {
       return 'name'
     },
