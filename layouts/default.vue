@@ -144,12 +144,17 @@ export default {
       ]
     },
   },
+  watch: {
+    '$eth.isConnected'(val) {
+      this.buttonText = val
+        ? this.$i18n.t('disconnect_wallet')
+        : this.$i18n.t('connect_wallet')
+    },
+  },
   methods: {
     handleConnectProvider() {
       console.log(this.$eth.isConnected)
-      this.buttonText = this.$eth.isConnected
-        ? this.$i18n.t('disconnect_wallet')
-        : this.$i18n.t('connect_wallet')
+
       return this.$eth.isConnected
         ? this.$eth.disconnect()
         : this.$eth.connect()
