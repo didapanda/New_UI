@@ -17,6 +17,7 @@ import nuxt_plugin_plugin_71702eae from 'nuxt_plugin_plugin_71702eae' // Source:
 import nuxt_plugin_sentryserver_0bfb1a03 from 'nuxt_plugin_sentryserver_0bfb1a03' // Source: ./sentry.server.js (mode: 'server')
 import nuxt_plugin_sentryclient_b37caf0a from 'nuxt_plugin_sentryclient_b37caf0a' // Source: ./sentry.client.js (mode: 'client')
 import nuxt_plugin_plugin_4b697836 from 'nuxt_plugin_plugin_4b697836' // Source: ./vuetify/plugin.js (mode: 'all')
+import nuxt_plugin_vueethereumplugin_01292233 from 'nuxt_plugin_vueethereumplugin_01292233' // Source: ./vue-ethereum-plugin.js (mode: 'all')
 import nuxt_plugin_cookieuniversalnuxt_fd3f6a32 from 'nuxt_plugin_cookieuniversalnuxt_fd3f6a32' // Source: ./cookie-universal-nuxt.js (mode: 'all')
 import nuxt_plugin_httpserver_164e12ec from 'nuxt_plugin_httpserver_164e12ec' // Source: ./http.server.js (mode: 'server')
 import nuxt_plugin_http_6d9d6531 from 'nuxt_plugin_http_6d9d6531' // Source: ./http.js (mode: 'all')
@@ -29,6 +30,7 @@ import nuxt_plugin_metaplugin_6406b2a4 from 'nuxt_plugin_metaplugin_6406b2a4' //
 import nuxt_plugin_axios_2fcb093f from 'nuxt_plugin_axios_2fcb093f' // Source: ./axios.js (mode: 'all')
 import nuxt_plugin_veevalidate_6e5ad03a from 'nuxt_plugin_veevalidate_6e5ad03a' // Source: ../plugins/vee-validate (mode: 'all')
 import nuxt_plugin_axios_3566aa80 from 'nuxt_plugin_axios_3566aa80' // Source: ../plugins/axios (mode: 'all')
+import nuxt_plugin_web3_2fab1e02 from 'nuxt_plugin_web3_2fab1e02' // Source: ../plugins/web3.js (mode: 'all')
 import nuxt_plugin_plugin_76e0298a from 'nuxt_plugin_plugin_76e0298a' // Source: ./auth/plugin.js (mode: 'all')
 
 // Component: <ClientOnly>
@@ -239,6 +241,10 @@ async function createApp(ssrContext, config = {}) {
     await nuxt_plugin_plugin_4b697836(app.context, inject)
   }
 
+  if (typeof nuxt_plugin_vueethereumplugin_01292233 === 'function') {
+    await nuxt_plugin_vueethereumplugin_01292233(app.context, inject)
+  }
+
   if (typeof nuxt_plugin_cookieuniversalnuxt_fd3f6a32 === 'function') {
     await nuxt_plugin_cookieuniversalnuxt_fd3f6a32(app.context, inject)
   }
@@ -285,6 +291,10 @@ async function createApp(ssrContext, config = {}) {
 
   if (typeof nuxt_plugin_axios_3566aa80 === 'function') {
     await nuxt_plugin_axios_3566aa80(app.context, inject)
+  }
+
+  if (typeof nuxt_plugin_web3_2fab1e02 === 'function') {
+    await nuxt_plugin_web3_2fab1e02(app.context, inject)
   }
 
   if (typeof nuxt_plugin_plugin_76e0298a === 'function') {
